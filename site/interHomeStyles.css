@@ -1,0 +1,267 @@
+@font-face {
+    src: url(SFPRODISPLAYREGULAR.woff);
+    font-family: sfpro;
+}
+
+* {
+    font-family: sfpro;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+.mainTitle {
+    font-weight: 850;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    font-size: 6rem;
+    text-rendering: optimizeLegibility;
+    color: rgb(255, 255, 255);
+}
+
+.sideCardContainer {
+    border: 2px #3d3d3d solid;
+    width: 10.7rem;
+    height: 2rem;
+    position: fixed;
+    top: 93%;
+    left: 1%;
+    border-radius: 10px;
+    background-color: #3d3d3d;
+    opacity: 24%;
+}
+
+.sideCardGreeting {
+    font-weight: 500;
+    position: fixed;
+    top: 93.5%;
+    left: 1.5%;
+    font-size: 1.2rem;
+    text-rendering: optimizeLegibility;
+    color: rgb(255, 255, 255);
+}
+
+
+.sideCardTime {
+    font-weight: 500;
+    position: fixed;
+    top: 93.5%;
+    left: 1.4%;
+    font-size: 1.2rem;
+    text-rendering: optimizeLegibility;
+    color: rgb(255, 255, 255);
+}
+
+.sideCardWeather {
+    font-weight: 500;
+    position: fixed;
+    top: 93.3%;
+    left: 2.7%;
+    font-size: 1.3rem;
+    text-rendering: optimizeLegibility;
+    color: rgb(255, 255, 255);
+}
+
+.sideCardWeatherLocation {
+    font-weight: 200;
+    position: fixed;
+    top: 93.7%;
+    left: 4%;
+    font-size: 1rem;
+    text-rendering: optimizeLegibility;
+    color: white;
+}
+
+
+.mainBackgroundContainer {
+    position: relative;
+}
+
+.mainBackgroundClass {
+    width: 110%;
+    height: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translate(-5%, -5%);
+    filter: blur(10px);
+}
+
+.iconWeather {
+    font-weight: 500;
+    position: fixed;
+    top: 93.2%;
+    left: 1.2%;
+    width: 2rem;
+    height: 1.8rem;
+    text-rendering: optimizeLegibility;
+    color: rgb(255, 255, 255);
+}
+
+#changeText {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.hide {
+    opacity: 0 !important;
+}
+
+@keyframes titleIntro {
+    0% {
+        transform: translate(-50%, -160%);
+        font-size: 5rem;
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(-50%, -60%);
+        font-size: 6rem;
+        opacity: 100;
+    }
+}
+
+@keyframes sideCardIntro {
+    0% {
+        opacity: 0%;
+        top: 93%;
+        left: -1%;
+    }
+
+    100% {
+        opacity: 24%;
+        top: 93%;
+        left: 1%;
+    }
+}
+
+@keyframes sideCardTextIntro {
+    0% {
+        opacity: 0%;
+        top: 93.5%;
+        left: -1.5%;
+    }
+
+    100% {
+        opacity: 100%;
+        top: 93.5%;
+        left: 1.4%;
+    }
+}
+
+@keyframes sideCardExtendTimeForwardsGN {
+    0% {
+        width: 9.5rem;
+    }
+
+    100% {
+        width: 7.7rem;
+    }
+}
+
+@keyframes sideCardExtendTimeBackwardsGN {
+    0% {
+        width: 7.7rem;
+    }
+
+    100% {
+        width: 9.5rem;
+    }
+}
+
+@keyframes sideCardExtendTimeForwardsGE {
+    0% {
+        width: 10.7rem;
+    }
+
+    100% {
+        width: 7.7rem;
+    }
+}
+
+@keyframes sideCardExtendTimeBackwardsGE {
+    0% {
+        width: 7.7rem;
+    }
+
+    100% {
+        width: 11.6rem;
+    }
+}
+
+@keyframes sideCardExtendTimeForwardsGA {
+    0% {
+        width: 11.6rem;
+    }
+
+    100% {
+        width: 7.7rem;
+    }
+}
+
+@keyframes sideCardExtendTimeBackwardsGA {
+    0% {
+        width: 7.7rem;
+    }
+
+    100% {
+        width: 11.6rem;
+    }
+}
+
+@keyframes sideCardExtendTimeForwardsGM {
+    0% {
+        width: 11rem;
+    }
+
+    100% {
+        width: 7.7rem;
+    }
+}
+
+@keyframes sideCardExtendTimeBackwardsGM {
+    0% {
+        width: 7.7rem;
+    }
+
+    100% {
+        width: 11rem;
+    }
+}
+
+@keyframes sideCardExtendWeatherForwardsGE {
+    0% {
+        width: 10.7rem;
+    }
+
+    100% {
+        width: 7rem;
+
+    }
+}
+
+
+@keyframes sideCardExtendWeatherBackwardsGE {
+    0% {
+
+        width: 7rem;
+    }
+
+    100% {
+        width: 7.7rem;
+    }
+}
+
+
+@keyframes blurForwards {
+    0% {
+        filter: blur(0px);
+    }
+
+    100% {
+        filter: blur(10px);
+    }
+}

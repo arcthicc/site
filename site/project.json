@@ -1,0 +1,24 @@
+{
+	"file": "InterHome.html",
+	"general": {
+		"properties": {
+			"schemecolor": {
+				"order": 0,
+				"text": "ui_browse_properties_scheme_color",
+				"type": "color",
+				"value": "0 0 0"
+			},
+			"username": {
+				"index": 0,
+				"order": 100,
+				"text": "userName",
+				"type": "textinput",
+				"value": "User"
+			}
+		}
+	},
+	"title": "InterHome",
+	"type": "web",
+	"version": 0
+}
+
